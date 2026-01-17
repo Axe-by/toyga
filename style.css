@@ -1,0 +1,38 @@
+.font-calligraphy { font-family: 'Great Vibes', cursive; }
+.font-serif { font-family: 'Cormorant Garamond', serif; }
+.font-sans { font-family: 'Montserrat', sans-serif; }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1.2s;
+}
+.reveal.active {
+  opacity: 1;
+  transform: none;
+}
+
+.ornament-sepia {
+  filter: sepia(0.4) brightness(0.85);
+}
+
+.paper-overlay {
+  position: fixed;
+  inset: 0;
+  background-image: url('https://www.transparenttextures.com/patterns/handmade-paper.png');
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+@keyframes subtle-zoom {
+  to { transform: scale(1.08); }
+}
+.animate-zoom {
+  animation: subtle-zoom 30s infinite alternate;
+}
+
+#mobile-container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+}
