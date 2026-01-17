@@ -1,38 +1,108 @@
-.font-calligraphy { font-family: 'Great Vibes', cursive; }
-.font-serif { font-family: 'Cormorant Garamond', serif; }
-.font-sans { font-family: 'Montserrat', sans-serif; }
-
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: 1.2s;
-}
-.reveal.active {
-  opacity: 1;
-  transform: none;
+:root {
+  --ivory:#fdfaf6;
+  --gold:#c9b37e;
+  --text:#3a3a3a;
 }
 
-.ornament-sepia {
-  filter: sepia(0.4) brightness(0.85);
+* { box-sizing:border-box; }
+
+body {
+  margin:0;
+  background:var(--ivory);
+  color:var(--text);
+  font-family:'Montserrat', sans-serif;
 }
 
-.paper-overlay {
-  position: fixed;
-  inset: 0;
-  background-image: url('https://www.transparenttextures.com/patterns/handmade-paper.png');
-  opacity: 0.15;
-  pointer-events: none;
+.hero {
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
 }
 
-@keyframes subtle-zoom {
-  to { transform: scale(1.08); }
-}
-.animate-zoom {
-  animation: subtle-zoom 30s infinite alternate;
+.names {
+  font-family:'Great Vibes', cursive;
+  font-size:64px;
+  color:var(--gold);
 }
 
-#mobile-container {
-  max-width: 500px;
-  margin: auto;
-  background: white;
+.date {
+  font-family:'Playfair Display', serif;
+  letter-spacing:3px;
+}
+
+.ornament {
+  text-align:center;
+  margin:60px 0;
+}
+
+.ornament img {
+  width:200px;
+  opacity:0.8;
+}
+
+.info {
+  text-align:center;
+  padding:40px 20px;
+}
+
+.countdown {
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:40px;
+}
+
+.countdown div {
+  background:white;
+  padding:15px 20px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+  padding:40px;
+}
+
+.gallery img {
+  width:100%;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.rsvp {
+  text-align:center;
+  padding:60px 20px;
+}
+
+.rsvp input,
+.rsvp select {
+  width:100%;
+  max-width:300px;
+  padding:12px;
+  margin:10px 0;
+}
+
+.rsvp button {
+  background:var(--gold);
+  border:none;
+  padding:14px 28px;
+  color:white;
+  border-radius:30px;
+}
+
+.music-toggle {
+  position:fixed;
+  top:20px;
+  right:20px;
+  border:none;
+  background:var(--gold);
+  color:white;
+  border-radius:50%;
+  width:44px;
+  height:44px;
 }
