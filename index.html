@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Azhar & Almas Wedding Invitation</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#F0EDE9]">
+
+<div class="paper-overlay"></div>
+
+<main id="mobile-container">
+
+<!-- HERO -->
+<section class="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-[#FCF9F5] px-8 text-center">
+  <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+    <img src="https://r2.erweima.ai/i/67be4f6a7412e06180189d99"
+         class="w-[130%] opacity-[0.07] animate-zoom"/>
+  </div>
+
+  <div class="z-10">
+    <p class="font-serif text-[11px] tracking-[0.5em] text-[#B8860B] mb-12 uppercase reveal">
+      Тойға шақыру
+    </p>
+
+    <h1 class="font-calligraphy text-8xl text-[#2D2D2D]">Azhar</h1>
+    <div class="my-4 text-[#D4AF37]">❤</div>
+    <h1 class="font-calligraphy text-8xl text-[#2D2D2D]">Almas</h1>
+
+    <div class="mt-20">
+      <p class="font-serif text-3xl italic text-[#8B735B]">15 қазан 2025</p>
+      <p class="font-sans text-[10px] tracking-[0.4em] uppercase mt-4">
+        Сағат 18:00-де
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ORNAMENT -->
+<div class="flex justify-center py-16 bg-white">
+  <img src="https://r2.erweima.ai/i/67be4f697412e06180189d98"
+       class="w-[280px] ornament-sepia"/>
+</div>
+
+<!-- COUNTDOWN -->
+<section class="py-24 text-center bg-[#FCF9F5] reveal">
+  <h3 class="font-serif text-[10px] tracking-[0.5em] text-[#B8860B] uppercase mb-16">
+    Той салтанатына дейін:
+  </h3>
+
+  <div id="countdown" class="flex justify-center gap-4"></div>
+</section>
+
+<!-- GALLERY -->
+<section class="py-24 px-8 bg-white reveal">
+  <h3 class="font-calligraphy text-6xl text-center mb-12">Галерея</h3>
+  <div class="columns-2 gap-4 space-y-4">
+    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed"
+         class="rounded-[40px] shadow-xl"/>
+    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622"
+         class="rounded-[40px] shadow-xl"/>
+  </div>
+</section>
+
+<!-- RSVP -->
+<section class="py-24 px-10 bg-[#FCF9F5] reveal">
+  <h3 class="font-calligraphy text-6xl text-center mb-12">Жауап Күтеміз</h3>
+
+  <form id="rsvpForm" class="max-w-[340px] mx-auto space-y-8">
+    <input id="name" required placeholder="Аты-жөніңіз"
+      class="w-full border-b bg-transparent text-2xl font-serif"/>
+
+    <button type="submit"
+      class="w-full bg-[#25D366] text-white py-5 rounded-full tracking-[0.4em] uppercase">
+      WhatsApp жіберу
+    </button>
+  </form>
+</section>
+
+<footer class="py-24 text-center bg-white">
+  <p class="font-calligraphy text-7xl">Сіздерді күтеміз!</p>
+  <p class="italic mt-6">Ажар мен Алмас</p>
+</footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
